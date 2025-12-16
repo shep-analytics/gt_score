@@ -1,0 +1,22 @@
+
+\begin{table}[htbp]
+\centering
+\caption{Summary of Validation Performance by Loss Function}
+\label{tab:summary_results}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Loss Function} & \textbf{Mean Return} & \textbf{Std Dev} & \textbf{vs GT-Score} & \textbf{Cohen's d} & \textbf{N} \\
+\midrule
+GT-Score & 0.436 & 0.626 & --- & --- & --- \\
+Sharpe & 0.463 & 0.717 & p=0.014* & -0.04 & 2250 \\
+Sortino & 0.493 & 0.761 & p=0.000*** & -0.08 & 2250 \\
+Simple & 0.495 & 0.762 & p=0.000*** & -0.09 & 2250 \\
+
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Note: * p < 0.05, ** p < 0.01, *** p < 0.001 (paired t-test vs GT-Score)
+\item Cohen's d interpretation: 0.2 = small, 0.5 = medium, 0.8 = large
+\end{tablenotes}
+\end{table}

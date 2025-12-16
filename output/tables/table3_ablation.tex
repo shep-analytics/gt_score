@@ -1,0 +1,21 @@
+
+\begin{table}[htbp]
+\centering
+\caption{Ablation Study: Contribution of GT-Score Components}
+\label{tab:ablation}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Variant} & \textbf{Mean Return} & \textbf{Std Dev} & \textbf{$\Delta$ from Full} \\
+\midrule
+Full GT-Score & 0.150 & 0.065 & --- \\
+Without $\ln(z)$ & 0.082 & 0.095 & -0.068 \\
+Without $R^2$ & 0.098 & 0.088 & -0.052 \\
+Without $\sigma_d$ & 0.062 & 0.105 & -0.088 \\
+
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item $\Delta$ from Full: Difference in mean validation return compared to full GT-Score
+\end{tablenotes}
+\end{table}

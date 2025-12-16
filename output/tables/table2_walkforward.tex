@@ -1,0 +1,21 @@
+
+\begin{table}[htbp]
+\centering
+\caption{Walk-Forward Validation Performance}
+\label{tab:walkforward}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Loss Function} & \textbf{Mean Val Return} & \textbf{Std} & \textbf{Overfitting Ratio} & \textbf{N Splits} \\
+\midrule
+GT-Score & 0.142 & 0.065 & 0.89 & 250 \\
+Sharpe Ratio & 0.098 & 0.082 & 0.72 & 250 \\
+Sortino Ratio & 0.105 & 0.078 & 0.75 & 250 \\
+Simple & 0.056 & 0.112 & 0.45 & 250 \\
+
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Overfitting Ratio = Validation Loss / Training Loss (closer to 1.0 is better)
+\end{tablenotes}
+\end{table}

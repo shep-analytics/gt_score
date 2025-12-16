@@ -1,0 +1,177 @@
+{
+  "experiment_info": {
+    "experiment_type": "Walk-Forward Validation",
+    "completed": "2025-12-15 18:33:36",
+    "runtime_minutes": 60.7,
+    "total_tasks": 5340,
+    "errors": 0,
+    "config": {
+      "assets": 50,
+      "loss_functions": [
+        "gt_score",
+        "sharpe",
+        "sortino",
+        "simple"
+      ],
+      "strategies": [
+        "RSI",
+        "MACD",
+        "BollingerBands"
+      ],
+      "train_years": 4,
+      "val_years": 2,
+      "step_years": 1,
+      "splits_per_asset": 9,
+      "max_evals": 25,
+      "data_range": "2010-01-01 to 2024-12-31"
+    }
+  },
+  "summary_by_loss_function": {
+    "gt_score": {
+      "n": 1335,
+      "val_return": {
+        "mean": 0.1852,
+        "std": 0.3708,
+        "min": -0.5306,
+        "max": 6.8563
+      },
+      "train_return": {
+        "mean": 0.5067,
+        "std": 0.627
+      },
+      "generalization_ratio": 0.3655
+    },
+    "sharpe": {
+      "n": 1335,
+      "val_return": {
+        "mean": 0.171,
+        "std": 0.3411,
+        "min": -0.5306,
+        "max": 5.7625
+      },
+      "train_return": {
+        "mean": 0.9521,
+        "std": 1.1479
+      },
+      "generalization_ratio": 0.1796
+    },
+    "sortino": {
+      "n": 1335,
+      "val_return": {
+        "mean": 0.1857,
+        "std": 0.3503,
+        "min": -0.6102,
+        "max": 5.7625
+      },
+      "train_return": {
+        "mean": 0.9986,
+        "std": 1.1558
+      },
+      "generalization_ratio": 0.186
+    },
+    "simple": {
+      "n": 1335,
+      "val_return": {
+        "mean": 0.1896,
+        "std": 0.3543,
+        "min": -0.6159,
+        "max": 5.7625
+      },
+      "train_return": {
+        "mean": 1.0091,
+        "std": 1.1595
+      },
+      "generalization_ratio": 0.1879
+    }
+  },
+  "overfitting_analysis": {
+    "gt_score_ratio": 0.3655,
+    "baseline_avg_ratio": 0.1845,
+    "improvement_pct": 98.1,
+    "interpretation": "GT-Score strategies retain nearly 2x more of their training performance when tested out-of-sample"
+  },
+  "statistical_comparisons": {
+    "gt_score_vs_sharpe": {
+      "mean_difference": 0.0142,
+      "p_value": 0.3041,
+      "cohens_d": 0.0398,
+      "significant": "no"
+    },
+    "gt_score_vs_sortino": {
+      "mean_difference": -0.0005,
+      "p_value": 0.9693,
+      "cohens_d": -0.0015,
+      "significant": "no"
+    },
+    "gt_score_vs_simple": {
+      "mean_difference": -0.0044,
+      "p_value": 0.7525,
+      "cohens_d": -0.0122,
+      "significant": "no"
+    }
+  },
+  "performance_by_time_period": {
+    "split_1": {
+      "period": "2014-02 to 2016-02",
+      "gt_score_return": 0.1322,
+      "baseline_avg_return": 0.1168
+    },
+    "split_2": {
+      "period": "2015-02 to 2017-02",
+      "gt_score_return": 0.1696,
+      "baseline_avg_return": 0.1706
+    },
+    "split_3": {
+      "period": "2016-02 to 2018-02",
+      "gt_score_return": 0.3013,
+      "baseline_avg_return": 0.2734
+    },
+    "split_4": {
+      "period": "2017-02 to 2019-02",
+      "gt_score_return": 0.2095,
+      "baseline_avg_return": 0.1552
+    },
+    "split_5": {
+      "period": "2018-02 to 2020-02",
+      "gt_score_return": 0.2102,
+      "baseline_avg_return": 0.1902
+    },
+    "split_6": {
+      "period": "2019-02 to 2021-02",
+      "gt_score_return": 0.2468,
+      "baseline_avg_return": 0.2466
+    },
+    "split_7": {
+      "period": "2020-02 to 2022-02",
+      "gt_score_return": 0.2137,
+      "baseline_avg_return": 0.2927
+    },
+    "split_8": {
+      "period": "2021-02 to 2023-02",
+      "gt_score_return": 0.0698,
+      "baseline_avg_return": 0.0722
+    },
+    "split_9": {
+      "period": "2022-02 to 2024-02",
+      "gt_score_return": 0.1061,
+      "baseline_avg_return": 0.1164
+    }
+  },
+  "key_findings": [
+    {
+      "finding": "GT-Score dramatically reduces overfitting in walk-forward",
+      "evidence": "Generalization ratio: GT-Score (0.365) vs baselines avg (0.184) = 98% improvement",
+      "interpretation": "GT-Score retains nearly twice as much of training performance when applied to new data"
+    },
+    {
+      "finding": "Raw validation returns are comparable across methods",
+      "evidence": "All methods achieve 17-19% mean validation returns",
+      "interpretation": "The advantage is in consistency and reduced overfitting, not raw returns"
+    },
+    {
+      "finding": "GT-Score requires less training data exploitation",
+      "evidence": "GT-Score train return (0.51) vs others (0.95-1.01) - half the training performance",
+      "interpretation": "GT-Score finds more robust parameters that do not overfit to training patterns"
+    }
+  ]
+}

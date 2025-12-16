@@ -1,0 +1,31 @@
+# GT-Score Reproducible Code
+# Python dependencies with pinned versions
+
+# Core scientific computing
+numpy==2.2.1
+pandas==2.2.3
+scipy==1.14.1
+
+# Machine learning
+scikit-learn==1.6.0
+
+# Visualization
+matplotlib==3.10.0
+
+# Data fetching
+yfinance>=0.2.66
+
+# Optimization libraries
+hyperopt==0.2.7
+deap==1.4.1
+
+# Progress bars
+tqdm==4.67.1
+
+# Testing
+pytest==8.0.0
+pytest-cov==4.1.0
+
+# Jupyter (optional, for notebooks)
+jupyter==1.0.0
+ipykernel==6.29.0

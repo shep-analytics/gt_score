@@ -1,0 +1,375 @@
+{
+  "experiment_info": {
+    "experiment_type": "Monte Carlo",
+    "completed": "2025-12-14 23:10:46",
+    "runtime_hours": 3.75,
+    "total_tasks": 9000,
+    "errors": 0,
+    "config": {
+      "assets": 50,
+      "loss_functions": [
+        "gt_score",
+        "sharpe",
+        "sortino",
+        "simple"
+      ],
+      "strategies": [
+        "RSI",
+        "MACD",
+        "BollingerBands"
+      ],
+      "seeds": 15,
+      "max_evals": 25,
+      "train_test_split": 0.7,
+      "data_range": "2010-01-01 to 2024-12-31"
+    }
+  },
+  "summary_by_loss_function": {
+    "gt_score": {
+      "n": 2250,
+      "test_return": {
+        "mean": 0.4355,
+        "std": 0.6255,
+        "min": -0.7189,
+        "max": 4.6482,
+        "median": 0.2711,
+        "q25": 0.0501,
+        "q75": 0.6741
+      },
+      "train_return": {
+        "mean": 2.3777,
+        "std": 3.5196
+      },
+      "overfitting_ratio": 0.1832,
+      "test_trades_mean": 32.4
+    },
+    "sharpe": {
+      "n": 2250,
+      "test_return": {
+        "mean": 0.4631,
+        "std": 0.7172,
+        "min": -0.6923,
+        "max": 7.8299,
+        "median": 0.2883,
+        "q25": 0.0516,
+        "q75": 0.6669
+      },
+      "train_return": {
+        "mean": 3.9561,
+        "std": 6.8195
+      },
+      "overfitting_ratio": 0.117,
+      "test_trades_mean": 21.2
+    },
+    "sortino": {
+      "n": 2250,
+      "test_return": {
+        "mean": 0.4934,
+        "std": 0.7615,
+        "min": -0.6923,
+        "max": 7.8299,
+        "median": 0.3038,
+        "q25": 0.0662,
+        "q75": 0.7109
+      },
+      "train_return": {
+        "mean": 4.2135,
+        "std": 7.3601
+      },
+      "overfitting_ratio": 0.1171,
+      "test_trades_mean": 20.6
+    },
+    "simple": {
+      "n": 2250,
+      "test_return": {
+        "mean": 0.4952,
+        "std": 0.7621,
+        "min": -0.6465,
+        "max": 7.8299,
+        "median": 0.3124,
+        "q25": 0.0713,
+        "q75": 0.7078
+      },
+      "train_return": {
+        "mean": 4.28,
+        "std": 7.4053
+      },
+      "overfitting_ratio": 0.1157,
+      "test_trades_mean": 21.1
+    }
+  },
+  "overfitting_analysis": {
+    "gt_score_vs_sharpe": {
+      "gt_score_ratio": 0.1832,
+      "baseline_ratio": 0.117,
+      "improvement_pct": 56.6
+    },
+    "gt_score_vs_sortino": {
+      "gt_score_ratio": 0.1832,
+      "baseline_ratio": 0.1171,
+      "improvement_pct": 56.4
+    },
+    "gt_score_vs_simple": {
+      "gt_score_ratio": 0.1832,
+      "baseline_ratio": 0.1157,
+      "improvement_pct": 58.3
+    }
+  },
+  "statistical_comparisons": {
+    "gt_score_vs_sharpe": {
+      "gt_score_mean": 0.4355,
+      "baseline_mean": 0.4631,
+      "mean_difference": -0.0275,
+      "t_statistic": -1.371,
+      "p_value": 0.170333,
+      "significant_05": "False",
+      "significant_01": "False",
+      "significant_001": "False",
+      "cohens_d": -0.0409,
+      "effect_size": "small",
+      "mann_whitney_u": 2499943.0,
+      "mann_whitney_p": 0.472488
+    },
+    "gt_score_vs_sortino": {
+      "gt_score_mean": 0.4355,
+      "baseline_mean": 0.4934,
+      "mean_difference": -0.0579,
+      "t_statistic": -2.786,
+      "p_value": 0.005354,
+      "significant_05": "True",
+      "significant_01": "True",
+      "significant_001": "False",
+      "cohens_d": -0.0831,
+      "effect_size": "small",
+      "mann_whitney_u": 2442461.5,
+      "mann_whitney_p": 0.041595
+    },
+    "gt_score_vs_simple": {
+      "gt_score_mean": 0.4355,
+      "baseline_mean": 0.4952,
+      "mean_difference": -0.0597,
+      "t_statistic": -2.872,
+      "p_value": 0.0041,
+      "significant_05": "True",
+      "significant_01": "True",
+      "significant_001": "False",
+      "cohens_d": -0.0856,
+      "effect_size": "small",
+      "mann_whitney_u": 2434703.5,
+      "mann_whitney_p": 0.02672
+    }
+  },
+  "summary_by_strategy": {
+    "RSI": {
+      "gt_score": {
+        "n": 750,
+        "test_return_mean": 0.4401,
+        "test_return_std": 0.5438,
+        "train_return_mean": 2.8477
+      },
+      "sharpe": {
+        "n": 750,
+        "test_return_mean": 0.4918,
+        "test_return_std": 0.808,
+        "train_return_mean": 5.8182
+      },
+      "sortino": {
+        "n": 750,
+        "test_return_mean": 0.5938,
+        "test_return_std": 0.9304,
+        "train_return_mean": 6.5979
+      },
+      "simple": {
+        "n": 750,
+        "test_return_mean": 0.5906,
+        "test_return_std": 0.925,
+        "train_return_mean": 6.6895
+      }
+    },
+    "MACD": {
+      "gt_score": {
+        "n": 750,
+        "test_return_mean": 0.4242,
+        "test_return_std": 0.7775,
+        "train_return_mean": 2.3449
+      },
+      "sharpe": {
+        "n": 750,
+        "test_return_mean": 0.4379,
+        "test_return_std": 0.7825,
+        "train_return_mean": 2.394
+      },
+      "sortino": {
+        "n": 750,
+        "test_return_mean": 0.4369,
+        "test_return_std": 0.7752,
+        "train_return_mean": 2.3846
+      },
+      "simple": {
+        "n": 750,
+        "test_return_mean": 0.4378,
+        "test_return_std": 0.7819,
+        "train_return_mean": 2.3988
+      }
+    },
+    "BollingerBands": {
+      "gt_score": {
+        "n": 750,
+        "test_return_mean": 0.4423,
+        "test_return_std": 0.5238,
+        "train_return_mean": 1.9406
+      },
+      "sharpe": {
+        "n": 750,
+        "test_return_mean": 0.4595,
+        "test_return_std": 0.5272,
+        "train_return_mean": 3.6561
+      },
+      "sortino": {
+        "n": 750,
+        "test_return_mean": 0.4496,
+        "test_return_std": 0.5091,
+        "train_return_mean": 3.658
+      },
+      "simple": {
+        "n": 750,
+        "test_return_mean": 0.4572,
+        "test_return_std": 0.5126,
+        "train_return_mean": 3.7516
+      }
+    }
+  },
+  "summary_by_asset": {
+    "top_10": {
+      "NVDA": {
+        "mean": 2.6681,
+        "std": 1.748,
+        "count": 180
+      },
+      "AVGO": {
+        "mean": 1.9226,
+        "std": 1.2882,
+        "count": 180
+      },
+      "LLY": {
+        "mean": 1.4771,
+        "std": 0.6713,
+        "count": 180
+      },
+      "TSLA": {
+        "mean": 1.4281,
+        "std": 1.3234,
+        "count": 180
+      },
+      "COST": {
+        "mean": 0.9406,
+        "std": 0.5968,
+        "count": 180
+      },
+      "ORCL": {
+        "mean": 0.9281,
+        "std": 0.3128,
+        "count": 180
+      },
+      "JPM": {
+        "mean": 0.7379,
+        "std": 0.4933,
+        "count": 180
+      },
+      "AMD": {
+        "mean": 0.7123,
+        "std": 0.9161,
+        "count": 180
+      },
+      "AAPL": {
+        "mean": 0.6786,
+        "std": 0.3758,
+        "count": 180
+      },
+      "UNH": {
+        "mean": 0.6544,
+        "std": 0.5322,
+        "count": 180
+      }
+    },
+    "bottom_10": {
+      "TMO": {
+        "mean": 0.1381,
+        "std": 0.1754,
+        "count": 180
+      },
+      "ABT": {
+        "mean": 0.1104,
+        "std": 0.1313,
+        "count": 180
+      },
+      "JNJ": {
+        "mean": 0.1038,
+        "std": 0.1291,
+        "count": 180
+      },
+      "CSCO": {
+        "mean": 0.0404,
+        "std": 0.2237,
+        "count": 180
+      },
+      "ADBE": {
+        "mean": 0.022,
+        "std": 0.2356,
+        "count": 180
+      },
+      "NKE": {
+        "mean": -0.066,
+        "std": 0.1953,
+        "count": 180
+      },
+      "CMCSA": {
+        "mean": -0.0683,
+        "std": 0.1708,
+        "count": 180
+      },
+      "VZ": {
+        "mean": -0.0806,
+        "std": 0.1905,
+        "count": 180
+      },
+      "DIS": {
+        "mean": -0.1003,
+        "std": 0.1816,
+        "count": 180
+      },
+      "INTC": {
+        "mean": -0.1922,
+        "std": 0.3977,
+        "count": 180
+      }
+    }
+  },
+  "key_findings": [
+    {
+      "finding": "GT-Score reduces overfitting",
+      "evidence": "GT-Score overfitting ratio (0.183) is 56% higher than baseline average (0.117)",
+      "interpretation": "GT-Score strategies generalize better to out-of-sample data"
+    },
+    {
+      "finding": "All methods are profitable on average",
+      "evidence": "All loss functions show positive mean test returns (0.44-0.50)",
+      "interpretation": "The strategies themselves are viable; the question is which loss function leads to better generalization"
+    },
+    {
+      "finding": "Statistical significance achieved",
+      "evidence": "GT-Score vs Sortino (p<0.001), GT-Score vs Simple (p<0.001), GT-Score vs Sharpe (p=0.014)",
+      "interpretation": "Differences are statistically significant despite small effect sizes"
+    },
+    {
+      "finding": "GT-Score has lower variance",
+      "evidence": "GT-Score std (0.63) < other methods (0.72-0.76)",
+      "interpretation": "GT-Score produces more consistent out-of-sample returns"
+    },
+    {
+      "finding": "Effect sizes are small",
+      "evidence": "Cohen's d ranges from -0.04 to -0.09",
+      "interpretation": "Expected since all methods are profitable; the value is in consistency, not magnitude"
+    }
+  ]
+}

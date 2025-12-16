@@ -1,0 +1,402 @@
+[
+  {
+    "seed": 42,
+    "train_loss": 171.91999999999996,
+    "test_loss": 603.44,
+    "train_return": 0.8440123490367029,
+    "test_return": 0.39955801767981286,
+    "train_trades": 46,
+    "test_trades": 22,
+    "best_params": {
+      "rsi_buy_threshold": 29.182803953736514,
+      "rsi_sell_threshold": 60.750322656680005,
+      "window": 11.875732959227982
+    },
+    "optimization_time": 3.1071574687957764,
+    "overfitting_ratio": 0.4734030469291601,
+    "asset": "AAPL",
+    "strategy": "RSI",
+    "loss_function": "gt_score",
+    "optimizer": "random"
+  },
+  {
+    "seed": 43,
+    "train_loss": 198.94519978928508,
+    "test_loss": 333.74,
+    "train_return": 0.5438353023569483,
+    "test_return": 0.16503741664708896,
+    "train_trades": 92,
+    "test_trades": 37,
+    "best_params": {
+      "rsi_buy_threshold": 23.59567685398637,
+      "rsi_sell_threshold": 74.94816689394153,
+      "window": 5.478927700608694
+    },
+    "optimization_time": 2.95572566986084,
+    "overfitting_ratio": 0.30346948043245275,
+    "asset": "AAPL",
+    "strategy": "RSI",
+    "loss_function": "gt_score",
+    "optimizer": "random"
+  },
+  {
+    "seed": 44,
+    "train_loss": 195.30710149654226,
+    "test_loss": 459.6,
+    "train_return": 1.6476643881013706,
+    "test_return": 0.6914855879883534,
+    "train_trades": 81,
+    "test_trades": 30,
+    "best_params": {
+      "rsi_buy_threshold": 28.75950906168523,
+      "rsi_sell_threshold": 89.08702439584741,
+      "window": 5.875083235008839
+    },
+    "optimization_time": 3.0085699558258057,
+    "overfitting_ratio": 0.41967623563507556,
+    "asset": "AAPL",
+    "strategy": "RSI",
+    "loss_function": "gt_score",
+    "optimizer": "random"
+  },
+  {
+    "seed": 45,
+    "train_loss": 184.27326235919253,
+    "test_loss": 675.36,
+    "train_return": 4.823679540161182,
+    "test_return": 0.5747775341962679,
+    "train_trades": 52,
+    "test_trades": 18,
+    "best_params": {
+      "rsi_buy_threshold": 33.25278983828264,
+      "rsi_sell_threshold": 88.88016909063259,
+      "window": 7.343865188098713
+    },
+    "optimization_time": 2.9746313095092773,
+    "overfitting_ratio": 0.11915748743480208,
+    "asset": "AAPL",
+    "strategy": "RSI",
+    "loss_function": "gt_score",
+    "optimizer": "random"
+  },
+  {
+    "seed": 46,
+    "train_loss": 100.0,
+    "test_loss": 567.48,
+    "train_return": -0.3321731950265643,
+    "test_return": 0.27027877275374623,
+    "train_trades": 50,
+    "test_trades": 24,
+    "best_params": {
+      "rsi_buy_threshold": 14.68333418757992,
+      "rsi_sell_threshold": 73.96825540750427,
+      "window": 6.857993464839669
+    },
+    "optimization_time": 2.9529147148132324,
+    "overfitting_ratio": -0.813668221278757,
+    "asset": "AAPL",
+    "strategy": "RSI",
+    "loss_function": "gt_score",
+    "optimizer": "random"
+  },
+  {
+    "seed": 42,
+    "train_loss": -0.058802971439683,
+    "test_loss": -0.056969388595231624,
+    "train_return": 1.2930981657475336,
+    "test_return": 0.4521598501142592,
+    "train_trades": 2,
+    "test_trades": 1,
+    "best_params": {
+      "rsi_buy_threshold": 16.69632214446468,
+      "rsi_sell_threshold": 82.09413642492038,
+      "window": 21.91748718557278
+    },
+    "optimization_time": 2.9617717266082764,
+    "overfitting_ratio": 0.3496717125515895,
+    "asset": "AAPL",
+    "strategy": "RSI",
+    "loss_function": "sharpe",
+    "optimizer": "random"
+  },
+  {
+    "seed": 43,
+    "train_loss": -0.05252553948848133,
+    "test_loss": -0.050594457537843356,
+    "train_return": 3.6458467692459,
+    "test_return": 1.0417560302989621,
+    "train_trades": 18,
+    "test_trades": 7,
+    "best_params": {
+      "rsi_buy_threshold": 26.40951712873017,
+      "rsi_sell_threshold": 82.65950514764899,
+      "window": 15.851703471305854
+    },
+    "optimization_time": 2.889049530029297,
+    "overfitting_ratio": 0.2857377438587297,
+    "asset": "AAPL",
+    "strategy": "RSI",
+    "loss_function": "sharpe",
+    "optimizer": "random"
+  },
+  {
+    "seed": 44,
+    "train_loss": -0.07207133701694432,
+    "test_loss": -0.04977561364314313,
+    "train_return": 3.5728139354556623,
+    "test_return": 1.0795099217199446,
+    "train_trades": 3,
+    "test_trades": 1,
+    "best_params": {
+      "rsi_buy_threshold": 25.41139625508027,
+      "rsi_sell_threshold": 89.68478731132653,
+      "window": 22.337756535785953
+    },
+    "optimization_time": 2.8399417400360107,
+    "overfitting_ratio": 0.30214557523054114,
+    "asset": "AAPL",
+    "strategy": "RSI",
+    "loss_function": "sharpe",
+    "optimizer": "random"
+  },
+  {
+    "seed": 45,
+    "train_loss": -0.0513479249714174,
+    "test_loss": -0.034781484575792394,
+    "train_return": 4.823679540161182,
+    "test_return": 0.5747775341962679,
+    "train_trades": 52,
+    "test_trades": 18,
+    "best_params": {
+      "rsi_buy_threshold": 33.25278983828264,
+      "rsi_sell_threshold": 88.88016909063259,
+      "window": 7.343865188098713
+    },
+    "optimization_time": 2.9496617317199707,
+    "overfitting_ratio": 0.11915748743480208,
+    "asset": "AAPL",
+    "strategy": "RSI",
+    "loss_function": "sharpe",
+    "optimizer": "random"
+  },
+  {
+    "seed": 46,
+    "train_loss": -0.05345863026487553,
+    "test_loss": -0.0,
+    "train_return": 0.7329979803592318,
+    "test_return": 0.0,
+    "train_trades": 2,
+    "test_trades": 0,
+    "best_params": {
+      "rsi_buy_threshold": 12.787643387459346,
+      "rsi_sell_threshold": 89.23091673222645,
+      "window": 16.96860957152741
+    },
+    "optimization_time": 2.845954656600952,
+    "overfitting_ratio": 0.0,
+    "asset": "AAPL",
+    "strategy": "RSI",
+    "loss_function": "sharpe",
+    "optimizer": "random"
+  },
+  {
+    "seed": 42,
+    "train_loss": 188.18156599145541,
+    "test_loss": 243.84000000000003,
+    "train_return": 2.880543150603879,
+    "test_return": 0.705253302910287,
+    "train_trades": 106,
+    "test_trades": 42,
+    "best_params": {
+      "rsi_buy_threshold": 38.716392166203434,
+      "rsi_sell_threshold": 70.0978363533788,
+      "window": 7.318646084503698
+    },
+    "optimization_time": 2.877216100692749,
+    "overfitting_ratio": 0.24483344495722523,
+    "asset": "MSFT",
+    "strategy": "RSI",
+    "loss_function": "gt_score",
+    "optimizer": "random"
+  },
+  {
+    "seed": 43,
+    "train_loss": 183.05968250526325,
+    "test_loss": 207.88,
+    "train_return": 3.5803005415350673,
+    "test_return": 1.333521525220354,
+    "train_trades": 110,
+    "test_trades": 44,
+    "best_params": {
+      "rsi_buy_threshold": 23.59567685398637,
+      "rsi_sell_threshold": 74.94816689394153,
+      "window": 5.478927700608694
+    },
+    "optimization_time": 2.861011266708374,
+    "overfitting_ratio": 0.3724607780129547,
+    "asset": "MSFT",
+    "strategy": "RSI",
+    "loss_function": "gt_score",
+    "optimizer": "random"
+  },
+  {
+    "seed": 44,
+    "train_loss": 53.20266475184994,
+    "test_loss": 405.65999999999997,
+    "train_return": 5.663060880450946,
+    "test_return": 0.9816850889183022,
+    "train_trades": 93,
+    "test_trades": 33,
+    "best_params": {
+      "rsi_buy_threshold": 28.75950906168523,
+      "rsi_sell_threshold": 89.08702439584741,
+      "window": 5.875083235008839
+    },
+    "optimization_time": 2.8336453437805176,
+    "overfitting_ratio": 0.17334884961366182,
+    "asset": "MSFT",
+    "strategy": "RSI",
+    "loss_function": "gt_score",
+    "optimizer": "random"
+  },
+  {
+    "seed": 45,
+    "train_loss": 153.93999999999994,
+    "test_loss": 603.44,
+    "train_return": 1.9064350762259965,
+    "test_return": 0.29635221364719816,
+    "train_trades": 47,
+    "test_trades": 22,
+    "best_params": {
+      "rsi_buy_threshold": 18.156262431522723,
+      "rsi_sell_threshold": 74.64084623552723,
+      "window": 7.046983559279164
+    },
+    "optimization_time": 2.905419111251831,
+    "overfitting_ratio": 0.15544836398722836,
+    "asset": "MSFT",
+    "strategy": "RSI",
+    "loss_function": "gt_score",
+    "optimizer": "random"
+  },
+  {
+    "seed": 46,
+    "train_loss": 100.0,
+    "test_loss": 639.4,
+    "train_return": 0.9734597560590177,
+    "test_return": 0.2726631171503621,
+    "train_trades": 50,
+    "test_trades": 20,
+    "best_params": {
+      "rsi_buy_threshold": 14.68333418757992,
+      "rsi_sell_threshold": 73.96825540750427,
+      "window": 6.857993464839669
+    },
+    "optimization_time": 2.929717540740967,
+    "overfitting_ratio": 0.280096958763061,
+    "asset": "MSFT",
+    "strategy": "RSI",
+    "loss_function": "gt_score",
+    "optimizer": "random"
+  },
+  {
+    "seed": 42,
+    "train_loss": -0.04760993674737246,
+    "test_loss": -0.043318479561407594,
+    "train_return": 2.880543150603879,
+    "test_return": 0.705253302910287,
+    "train_trades": 106,
+    "test_trades": 42,
+    "best_params": {
+      "rsi_buy_threshold": 38.716392166203434,
+      "rsi_sell_threshold": 70.0978363533788,
+      "window": 7.318646084503698
+    },
+    "optimization_time": 2.8851280212402344,
+    "overfitting_ratio": 0.24483344495722523,
+    "asset": "MSFT",
+    "strategy": "RSI",
+    "loss_function": "sharpe",
+    "optimizer": "random"
+  },
+  {
+    "seed": 43,
+    "train_loss": -0.055520086744264945,
+    "test_loss": -0.07031482615455024,
+    "train_return": 3.5803005415350673,
+    "test_return": 1.333521525220354,
+    "train_trades": 110,
+    "test_trades": 44,
+    "best_params": {
+      "rsi_buy_threshold": 23.59567685398637,
+      "rsi_sell_threshold": 74.94816689394153,
+      "window": 5.478927700608694
+    },
+    "optimization_time": 2.891083240509033,
+    "overfitting_ratio": 0.3724607780129547,
+    "asset": "MSFT",
+    "strategy": "RSI",
+    "loss_function": "sharpe",
+    "optimizer": "random"
+  },
+  {
+    "seed": 44,
+    "train_loss": -0.060695924365312605,
+    "test_loss": -0.05076849342042073,
+    "train_return": 5.663060880450946,
+    "test_return": 0.9816850889183022,
+    "train_trades": 93,
+    "test_trades": 33,
+    "best_params": {
+      "rsi_buy_threshold": 28.75950906168523,
+      "rsi_sell_threshold": 89.08702439584741,
+      "window": 5.875083235008839
+    },
+    "optimization_time": 2.915761947631836,
+    "overfitting_ratio": 0.17334884961366182,
+    "asset": "MSFT",
+    "strategy": "RSI",
+    "loss_function": "sharpe",
+    "optimizer": "random"
+  },
+  {
+    "seed": 45,
+    "train_loss": -0.05477203757736598,
+    "test_loss": -0.04621805524969445,
+    "train_return": 4.541350468232403,
+    "test_return": 0.9014101395926035,
+    "train_trades": 56,
+    "test_trades": 20,
+    "best_params": {
+      "rsi_buy_threshold": 33.25278983828264,
+      "rsi_sell_threshold": 88.88016909063259,
+      "window": 7.343865188098713
+    },
+    "optimization_time": 2.8359932899475098,
+    "overfitting_ratio": 0.19848944623369993,
+    "asset": "MSFT",
+    "strategy": "RSI",
+    "loss_function": "sharpe",
+    "optimizer": "random"
+  },
+  {
+    "seed": 46,
+    "train_loss": -0.058352919845940154,
+    "test_loss": -0.05030891095824917,
+    "train_return": 5.004581337098275,
+    "test_return": 0.9671056402561534,
+    "train_trades": 93,
+    "test_trades": 32,
+    "best_params": {
+      "rsi_buy_threshold": 27.511914567208184,
+      "rsi_sell_threshold": 88.41598565930187,
+      "window": 5.804534746406693
+    },
+    "optimization_time": 2.899523973464966,
+    "overfitting_ratio": 0.19324406481060305,
+    "asset": "MSFT",
+    "strategy": "RSI",
+    "loss_function": "sharpe",
+    "optimizer": "random"
+  }
+]

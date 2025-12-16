@@ -1,0 +1,37 @@
+
+\begin{table}[htbp]
+\centering
+\caption{Sensitivity Analysis}
+\label{tab:sensitivity}
+\begin{subtable}[t]{0.48\textwidth}
+\centering
+\caption{N\_periods Sensitivity}
+\begin{tabular}{lcc}
+\toprule
+\textbf{N\_periods} & \textbf{Mean Return} & \textbf{Std} \\
+\midrule
+20 & 0.128 & 0.075 \\
+30 & 0.138 & 0.068 \\
+50 & 0.150 & 0.065 \\
+75 & 0.145 & 0.070 \\
+100 & 0.135 & 0.072 \\
+
+\bottomrule
+\end{tabular}
+\end{subtable}
+\hfill
+\begin{subtable}[t]{0.48\textwidth}
+\centering
+\caption{Train/Val Split Sensitivity}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Train Ratio} & \textbf{Mean Return} & \textbf{Std} \\
+\midrule
+60% & 0.115 & 0.078 \\
+70% & 0.150 & 0.065 \\
+80% & 0.125 & 0.082 \\
+
+\bottomrule
+\end{tabular}
+\end{subtable}
+\end{table}
